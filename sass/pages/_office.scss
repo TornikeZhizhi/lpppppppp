@@ -1,0 +1,285 @@
+#office_fluid {
+	width: 100%;
+	 height: 100vh;
+	 background-image:url("../images/office_bg_2.jpg");
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 position: relative;
+	 overflow: hidden;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after{
+    	content:"";
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background-color: #fff;
+    	width: 56%;
+    	height: 100%;
+    	z-index: 1;
+    	-webkit-clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+
+    }
+}
+
+
+
+.office_container {
+	
+	 width: 70%;
+
+    .office_tittle {
+      position:relative;
+      z-index: 2;
+      padding-left: 22%;
+      margin-bottom: 2%;
+
+        h2 {
+          color: #000;
+          font-size: 18px;
+          font-family: 'Conv_CentraleSans-Medium';
+          text-transform: uppercase;
+
+        }
+    }
+
+	 
+}
+
+.office_slider {
+
+	section{
+		position: relative;
+
+		.controls {
+
+			left: 50%;
+		    position: absolute;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+			   z-index: 2; 
+
+			   
+		}
+	}
+}
+
+.clear { clear: both; }
+
+.controls {
+  width: 120%;
+  
+}
+
+.cbcontrol {
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#cbControlLeft{
+	float: left;
+}
+#cbControlRight { 
+
+	float: right;
+
+	 }
+
+.cbcontrol:hover { cursor: pointer; }
+
+.stage {
+  /*background-color: #000000;*/
+  float: left;
+  height: 460px;
+  overflow: hidden;
+  width: 100%;
+  /*max-width: 800px;*/
+  z-index: 10;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cbImage {
+  width: 350px;
+  height: 268px;
+  float: left;
+  /*margin: 25px 0px 25px 0px;*/
+  border-bottom:2px solid #D90000;
+ 
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+      &.active {
+      z-index: 100;
+      -webkit-transform: perspective(500px) rotateY(0deg);
+      -O-transform: perspective(500px) rotateY(0deg);
+      transform: perspective(500px) rotateY(0deg);
+      -webkit-transition: all .5s ease-out;
+      -O-transition: all .5s ease-out;
+      transition: all .5s ease-out;
+      box-shadow: -5px 2px 20px 0px #000000;
+    }
+}
+
+.cbImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.cbImage {
+
+    &.active{
+      transform: scale(1.5);
+    }
+}
+
+
+.inactiveLeft {
+  -webkit-transform: perspective(500px) rotateY(60deg);
+  -O-transform: perspective(500px) rotateY(60deg);
+  transform: perspective(500px) rotateY(60deg);
+  -webkit-transition: all .5s ease-out;
+  -O-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+      box-shadow: -5px 2px 20px 0px #000000;
+}
+
+.inactiveRight {
+  -webkit-transform: perspective(500px) rotateY(-60deg);
+  -O-transform: perspective(500px) rotateY(-60deg);
+  transform: perspective(500px) rotateY(-60deg);
+  -webkit-transition: all .5s ease-out;
+  -O-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  box-shadow: -12px 0px 20px 0px #d6d6d6;
+}
+
+.inactiveRight2 {
+  z-index: 50 !important;
+}
+
+.intro { color: #fff; }
+
+
+
+
+@media only screen and (max-width: 1400px){
+
+.office_container {
+    width: 80%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1366px){
+
+
+.cbImage.active {
+    transform: scale(1.4);
+}
+
+}
+
+
+
+@media only screen and (max-width: 992px){
+
+.cbImage.active {
+    transform: scale(1.3);
+}
+
+.office_container .office_tittle {
+ 
+    margin-bottom: -4%;
+}
+
+.cbImage {
+    width: 300px;
+    height: 238px;
+   
+}
+
+.resp_navbar_container ._navigation .li_o:after{
+  top: 4px !important;
+}
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+.cbImage {
+    width: 250px;
+    height: 180px;
+   
+}
+.cbImage.active {
+    transform: scale(1.2);
+}
+.cbcontrol img {
+  width:35px;
+}
+.controls {
+    width: 123%;
+}
+#cbControlLeft {
+    
+    display: flex;
+    align-items: center;
+
+}
+#cbControlRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.stage {
+  
+    height: 350px;
+  
+}
+
+}
+
+
+
+@media only screen and (max-width: 425px){
+.cbImage.active {
+    transform: scale(1.1);
+}
+.cbcontrol img {
+    width: 25px;
+}
+
+.cbImage {
+    width: 200px;
+    height: 130px;
+   
+}
+.stage {
+  
+    height: 280px;
+  
+}
+}

@@ -1,0 +1,221 @@
+#references_fluid{
+	
+	width: 100%;
+	 height: 100vh;
+	 background-image: linear-gradient(rgba(255,255,255, .6), rgba(255,255,255, .6)) ,url("../images/team_bgg11.jpg");
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 position: relative;
+	 overflow: hidden;
+
+	
+}
+
+
+.references_container {
+
+	    width: 70%;
+	    background-repeat: no-repeat;
+	    background-image: url(../images/reference_slider_bg11.png);
+	    background-position: center center;
+	    background-size: contain;
+	    height: 60%;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+
+	 .references_content_box {
+	 	    width: 80%;
+	 	    position: relative;
+
+	 	 .reference_text_box{
+
+	 	 	   p {
+	 	 	   	font-size: 18px;
+	 	 	   	color: #000000;
+	 	 	   	font-family: 'Conv_Centrale Sans Extra Light';
+	 	 	   	text-align: justify;
+	 	 	   }
+
+	 	 	   span {
+
+	 	 	   		color: #000000;
+	 	 	   		font-size: 16px;	
+	 	 	   }
+	 	 }
+	 }
+
+	 .owl-dots {
+	 	display: none;
+	 }
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 130%;
+    z-index: -1;
+}
+
+
+
+.references_content_box {
+
+	.owl-nav {
+			
+
+		
+	}
+}
+
+
+.references_container {
+	.owl-carousel .owl-nav button {
+	outline: none;
+	 width: 80px;
+    height: 80px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+	background-image: url("../images");
+
+	span {
+		display: none;
+	}
+
+
+		&.owl-next{
+			
+			background-image: url("../images/reference_slide_right11.png");
+		}
+
+		&.owl-prev{
+			background-image: url("../images/reference_slide_left11.png");
+		}
+
+}
+
+}
+
+ 
+
+
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1870px){
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+
+    width: 138%;
+   
+}
+}
+
+@media only screen and (max-width: 1500px) {
+	
+	.references_container .references_content_box .reference_text_box p {
+	    font-size: 16px;
+
+	}
+
+	.references_container .references_content_box .reference_text_box span {
+	   
+	    font-size: 14px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1376px) {
+
+	.references_container .references_content_box .reference_text_box p {
+    font-size: 14px;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 145%; 
+}
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+.references_container .references_content_box .reference_text_box p {
+    font-size: 13px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	
+	.references_container {
+
+    background-image: url(../images/reference_sl_line11.png);
+        background-size: 90% 70%;
+        width: 80%;
+        height: 55%;
+   
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+.reference_text_box {
+	overflow-y: scroll;
+	height: 200px;
+	    line-height: 15px;
+
+	  &::-webkit-scrollbar {
+    		width: 0px;
+		}
+}
+
+.references_container .references_content_box .reference_text_box p {
+    font-size: 11px;
+}
+
+.references_container .owl-carousel .owl-nav button {
+    width: 55px;
+    height: 54px;
+   
+}
+.references_container {
+
+    width: 100%;
+   
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 120%;
+}
+
+.references_container .references_content_box .reference_text_box span {
+    font-size: 10px;
+ 
+}
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    width: 130%;
+}	
+}
