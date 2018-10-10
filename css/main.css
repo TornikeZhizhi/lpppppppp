@@ -574,7 +574,7 @@ a:hover {
   -o-transition: .4s;
   transition: .4s;
   overflow: hidden;
-  z-index: 5000;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
