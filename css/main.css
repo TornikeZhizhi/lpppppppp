@@ -521,17 +521,20 @@ a:hover {
   position: fixed;
   top: 29px;
   right: 60px;
-  width: 35px;
+  width: 44px;
   height: 25px;
   cursor: pointer; }
   .responsive_navigation .hamburger {
-    width: 35px;
+    width: 44px;
     height: 4px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-radius: 10px;
     -webkit-transition: .6s;
     -o-transition: .6s;
     transition: .6s; }
+    .responsive_navigation .hamburger img {
+      height: 5px;
+      width: 48px; }
     .responsive_navigation .hamburger.ham1 {
       position: absolute;
       top: 0; }
@@ -801,7 +804,7 @@ a:hover {
     text-align: left; }
 
   .responsive_navigation {
-    top: 20px;
+    top: 10px;
     right: 35px; }
 
   .home_main_container .home_navbar_content .home_navbar_info.active {
@@ -1843,7 +1846,7 @@ a:hover {
   background-color: unset; }
 
 .hamb_for_about {
-  background-color: #000000 !important; }
+  /* background-color: #000000 !important; */ }
   .hamb_for_about.active2 {
     background-color: #fff !important; }
 

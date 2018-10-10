@@ -642,7 +642,7 @@
 		position: fixed;
 	    top: 29px;
 	    right: 60px;
-	    width: 35px;
+	    width: 44px;
 	    height: 25px;
 	    cursor: pointer;
 
@@ -652,13 +652,18 @@
    		 .hamburger {
 				
 
-   		 	    width: 35px;
+   		 	  	 width: 44px;
     			height: 4px;
-			    background-color: #fff;
+			    /*background-color: #fff;*/
 			    border-radius: 10px;
 			    -webkit-transition: .6s;
 			    -o-transition: .6s;
 			    transition: .6s;
+
+			     img {
+			     	height: 5px;
+			     	    width: 48px;
+			     }
 
 
 			    &.ham1 {
@@ -1095,7 +1100,7 @@
 }
 .responsive_navigation {
 
-    top: 20px;
+       top: 10px;
     right: 35px;
    
    
