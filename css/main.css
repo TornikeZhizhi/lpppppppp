@@ -782,10 +782,11 @@ a:hover {
     top: 11px;
     right: 4px;
     width: 102px;
-    height: 45px; }
+    height: 45px;
+    z-index: 999; }
 
   .main_logo {
-    background: #fff;
+    /*background: #fff;*/
     width: 100%;
     padding: 30px 0;
     text-align: center; }
